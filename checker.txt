@@ -1,1 +1,57 @@
 Checker = false
+Class ArgeCloud
+
+$имя_пользователя = "Гость";
+
+
+if (isset($_POST['имя'])) {
+  
+  $имя_пользователя = htmlspecialchars($_POST['имя']);
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <tit
+</head>
+<body>
+
+  <h1>
+/h1>
+
+  <p>Это простой пример кода на PHP.</p>
+
+  <form method="post">
+    <label for="имя">Введите ваше имя:</label>
+    <input type="text" id="имя" name="имя">
+    <button type="submit">Отправить</button>
+  </form>
+
+  <?php
+
+  
+  $фрукты = array("яблоко", "банан", "апельсин");
+
+  
+  echo "<p>Фрукты:</p>";
+  echo "<ul>";
+  foreach ($фрукты as $фрукт) {
+    echo "<li>" . $фрукт . "</li>";
+  }
+  echo "</ul>";
+
+  
+  function прибавить_два($число) {
+    return $число + 2;
+  }
+
+
+  $результат = прибавить_два(5);
+  echo "<p>5 + 2 = " . $результат . "</p>";
+
+  ?>
+
+</body>
+</html>
